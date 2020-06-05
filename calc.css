@@ -6,36 +6,96 @@ html, body {
     margin: 0 auto;
     width:  30%;
     min-width: 400px;
-    min-height: 450px;
-    height: 85%;
+    min-height: 400px;
+    height: 60%;
     margin-top: 3%;
     background-color: black;
     /* overflow: auto; */
 }
-.screen {
+.head {
     display: inline-block;
+    margin-left: 20%;
+    color: cornsilk;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 10px;
+}
+.txt {
+    /* display: inline-block; */
+    color: yellow;
+    font-size: larger;
     margin-top: 2%;
-    margin-left: 4%;
+    margin-left: 3%;
     background-color: gray;
-    width:  92%;  
+    width:  90%;  
     height: 10%;
 }
-
-.panel {
-    margin: 25% auto;
-    /* border: 4px solid blue; */
-    width:  95%;
-    height: 80%;
+#panel {
+    margin: 0 0 0 0;
+    width: 100%;
 }
 
-.button {
+.numbers {
+    /* background-color: darkgreen; */
+    padding: 0%;
+    float: left;
+    width: 60%;
+    margin: 5% 0% 0 3%;
+    /* border: 4px solid blue; */
+}
+.operators {
+    /* background-color: crimson; */
+    padding: 0%;
+    float: left;
+    width: 17%;
+    margin: 5% 0% 0 0;
+}
+
+.controls {
+    /* background-color: dimgray; */
+    padding: 0%;
+    float: left;
+    width: 17%;
+    margin: 5% 0% 0 0;
+}
+
+.opr, .ctl{
+    padding: 0%;
+    color: cornsilk;
+    display: block;
+    width: 90%;
+    height: 60px ;
+    margin-left: 0px;
+margin-top: 10px;
+min-width: 35px;
+background-color: #607d8b;
+}
+.equal {
+    color: cornsilk;
+    display: block;
+    width: 90%;
+    height: 130px ;
+    margin-left: 0px;
+margin-top: 10px;
+min-width: 35px;
+background-color:  #4d79ff;
+}
+.nums {
     color: cornsilk;
     display: inline-block;
-    width: 25%;
-    height: 15% ;
-    margin-left: 5px;
+    width: 30%;
+    height: 60px ;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0%;
     margin-top: 10px;   
     min-width: 35px;
-    background-color: chocolate;
-    
+    background-color: #4d79ff;
+}
+input:hover:not(.txt){
+    background-color: #0033cc;
+}
+input:active:not(.txt) {
+    box-shadow: 0 5px #666;
+    transform: translate(2px);
 }
