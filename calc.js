@@ -1,5 +1,4 @@
 var screen = document.querySelector(".txt")
-var number = document.querySelector('.numbers')
 var operator = document.querySelector('.operators',ops)
 var equal = document.querySelector('.equal')
 var controls = document.querySelector('.controls')
@@ -31,12 +30,12 @@ function OnOff(e) {
 function Num(e) {
     if (ON == true)
     {
-    if(screen.value == 0 || op_flag == true){
+    if(screen.value == 0 || op_flag == true) {
         op_flag = false
-        screen.value = e.target.value
+        screen.value = e
     }    
     else {
-        screen.value += e.target.value
+        screen.value += e
     }
 }
 }
@@ -81,6 +80,5 @@ else {
 
 
 equal.addEventListener('click',ops)
-number.addEventListener('click',Num)
 operator.addEventListener('click',ops)
 controls.addEventListener('click',OnOff)
