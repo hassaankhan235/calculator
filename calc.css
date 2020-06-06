@@ -5,9 +5,9 @@ html, body {
 .mainBody {
     margin: 0 auto;
     width:  30%;
-    min-width: 400px;
-    min-height: 400px;
-    height: 60%;
+    height: 67%;
+    min-width: 350px;
+    min-height: 390px;
     margin-top: 3%;
     background-color: black;
     /* overflow: auto; */
